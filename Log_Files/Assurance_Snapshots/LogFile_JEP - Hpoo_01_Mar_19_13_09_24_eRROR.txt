@@ -1,0 +1,48 @@
+
+Pass 01-Mar-19 13:09:25: Business component call Fn_JEP_HPNADB execution initiated
+Pass 01-Mar-19 13:09:39: ---------------------------------------------- HPNA DB Started ---------------------------------------------
+Pass 01-Mar-19 13:09:39: Sql file created, path: C:\RIL_TTAF_REPLICA\Output\318663_req.sql
+Pass 01-Mar-19 13:09:40: 318663_req.txt file transferred successfully to local directory
+Fail 01-Mar-19 13:12:14: Error: Task Failed in HPNA DB in enterprise_task_list: F
+*************************************************************************************
+Pass 01-Mar-19 13:12:34: Business component call Fn_JEP_HPNADB execution completed. Total Time taken = 189 seconds
+Pass 01-Mar-19 13:12:36: Business component call Fn_WebServices_JEP_HPOO_GetTemplateID execution initiated
+Pass 01-Mar-19 13:12:49: Service ID Set: 482222222103
+Pass 01-Mar-19 13:12:49: ============== Firing Soap Request =====================
+Pass 01-Mar-19 13:12:49: Request File set to : HpooTemplate_RequestRequest
+Pass 01-Mar-19 13:12:49: Response File set to : HpooTemplate_RequestResponse
+Pass 01-Mar-19 13:12:49: Soap Action set to : enterpriseServiceNIPParameter
+Pass 01-Mar-19 13:12:49: EndPoint URL set to : http://10.64.76.12:7285/enterprise/InventoryProvisioningServices/InventoryProvisioningServices
+Pass 01-Mar-19 13:12:49: ========================================================
+Pass 01-Mar-19 13:12:50: Template names retrieved from Soap Response
+Pass 01-Mar-19 13:12:50: Template Name: ILL_Ethernet_STATIC_BW_ECR_CSS_AG1_IPv6_Spur
+Pass 01-Mar-19 13:12:50: Total Template Names retrieved: 1
+Pass 01-Mar-19 13:12:50: Neids retrieved from Soap Response
+Pass 01-Mar-19 13:12:51: Neid: INMUMUMBXXXXNB0004ENTECR001
+Pass 01-Mar-19 13:12:51: Total Neids retrieved: 1
+Fail 01-Mar-19 13:12:51: Error: Neid Count is: 1 instead of: 
+*************************************************************************************
+Pass 01-Mar-19 13:13:16: Business component call Fn_WebServices_JEP_HPOO_GetTemplateID execution completed. Total Time taken = 40 seconds
+Pass 01-Mar-19 13:13:18: Business component call Fn_Jep_Hpoo_MatchTemplatesInWinScp execution initiated
+Pass 01-Mar-19 13:13:36: 482222222103_JepTemplates.txt file created successfully to local directory - with Template IDS
+Pass 01-Mar-19 13:13:36: Template Name: ILL_ETHERNET_STATIC_BW_ECR_CSS_AG1_IPV6_SPUR - matched in WinSCP
+Pass 01-Mar-19 13:13:36: All Templates matched in WinSCP
+Pass 01-Mar-19 13:13:36: Business component call Fn_Jep_Hpoo_MatchTemplatesInWinScp execution completed. Total Time taken = 18 seconds
+Pass 01-Mar-19 13:13:38: Business component call Fn_Jep_Hpoo_WinScp execution initiated
+Pass 01-Mar-19 13:13:48: Soap Request for HPOO ran successfully.
+Fail 01-Mar-19 13:13:52: Error: Folder: Enterprise_ServiceID_482222222103.zip NOT Found in HPOO server
+*************************************************************************************
+Pass 01-Mar-19 13:14:28: Business component call Fn_Jep_Hpoo_WinScp execution completed. Total Time taken = 50 seconds
+Pass 01-Mar-19 13:14:30: Business component call Fn_Jep_Hpoo_MatchMOPParameters execution initiated
+Pass 01-Mar-19 13:14:30: Business component call Fn_Jep_Hpoo_MatchMOPParameters execution completed. Total Time taken = 0 seconds
+Pass 01-Mar-19 13:14:34: Saving ExcelDashBoardReport
+Pass 01-Mar-19 13:14:34: ExcelDashBoardReport Saved
+Pass 01-Mar-19 13:14:34: Empty testCaseID found. Possibly End of Execution.
+Pass 01-Mar-19 13:14:34: Execution wrapUp initiated
+Pass 01-Mar-19 13:14:34: Saving ExcelDashBoardReport
+Pass 01-Mar-19 13:14:34: ExcelDashBoardReport Saved
+Pass 01-Mar-19 13:14:34: Closing HTML report
+Pass 01-Mar-19 13:14:34: HTML report closed
+Pass 01-Mar-19 13:14:34: Calling CloseExcelDashboardReport
+Pass 01-Mar-19 13:14:34: CloseExcelDashboardReport Completed
+Pass 01-Mar-19 13:14:35: Execution wrapUp Completed

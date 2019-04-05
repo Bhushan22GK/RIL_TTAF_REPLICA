@@ -1,0 +1,82 @@
+
+Pass 01-Mar-19 10:57:48: Business component call Fn_OrderCare_Login execution initiated
+Pass 01-Mar-19 10:58:06: Browser Title : ExpectedBrowserTitle:  OrderCare Velocity : ActualBrowserTitle:OrderCare Velocity
+Pass 01-Mar-19 10:58:09: ---------------------------------------------- Order Care Login Started ---------------------------------------------
+Pass 01-Mar-19 10:58:14: Browser Title : ExpectedBrowserTitle:  Select Application : ActualBrowserTitle:Select Application
+Pass 01-Mar-19 10:58:14: Successfully Logged into OrderCare
+Pass 01-Mar-19 10:58:14: ---------------------------------------------- Order Care Login Completed ---------------------------------------------
+Pass 01-Mar-19 10:58:14: Business component call Fn_OrderCare_Login execution completed. Total Time taken = 26 seconds
+Pass 01-Mar-19 10:58:16: Business component call Fn_OrderCare_ValidateOrders_Jep() execution initiated
+Pass 01-Mar-19 10:58:25: -------------------------------OrderCare : Validate Order Started-----------------------------------------------
+Pass 01-Mar-19 10:58:31: Browser Title : ExpectedBrowserTitle:  Administration : ActualBrowserTitle:Administration
+Pass 01-Mar-19 10:58:31: Successfully Navigated to Administration Page
+Pass 01-Mar-19 10:58:35: Successfully Navigated to Message Logs Page
+Pass 01-Mar-19 10:59:46: invokeHpoo Event STATUS: SUCCESS for 5000350063
+Pass 01-Mar-19 10:59:50: Hpoo - Request ID: 318547
+Pass 01-Mar-19 10:59:50: Hpoo - Service ID: 1400019028
+Pass 01-Mar-19 11:00:16: Neid: INMUMUMBXXXXNB0016ENBESS003
+Pass 01-Mar-19 11:00:20: Product: SIP Trunk
+Pass 01-Mar-19 11:00:20: Site Type: 
+Pass 01-Mar-19 11:00:25: Business component call Fn_OrderCare_ValidateOrders_Jep() execution completed. Total Time taken = 129 seconds
+Pass 01-Mar-19 11:00:27: Business component call Fn_Jep_NeIDCount() execution initiated
+Pass 01-Mar-19 11:00:37: Sql file created, path: C:\RIL_TTAF_REPLICA\Output\INMUMUMBXXXXNB0016ENBESS003_JepDetails.sql
+Pass 01-Mar-19 11:00:40: INMUMUMBXXXXNB0016ENBESS003_custmrDetails.txt file created successfully to local directory
+Pass 01-Mar-19 11:00:40: Neid for parent is: INMUMUMBXXXXNB0016ENBESR002 and INMUMUMBXXXXNB0016ENBESR002
+Pass 01-Mar-19 11:00:40: Expected No of Neids: 3
+Pass 01-Mar-19 11:00:45: Business component call Fn_Jep_NeIDCount() execution completed. Total Time taken = 18 seconds
+Pass 01-Mar-19 11:00:47: Business component call Fn_JEP_HPNADB execution initiated
+Pass 01-Mar-19 11:01:00: ---------------------------------------------- HPNA DB Started ---------------------------------------------
+Pass 01-Mar-19 11:01:00: Sql file created, path: C:\RIL_TTAF_REPLICA\Output\318547_req.sql
+Pass 01-Mar-19 11:01:02: 318547_req.txt file transferred successfully to local directory
+Pass 01-Mar-19 11:01:02: Task Completed in HPNA DB in enterprise_task_list: C
+Pass 01-Mar-19 11:01:06: Business component call Fn_JEP_HPNADB execution completed. Total Time taken = 19 seconds
+Pass 01-Mar-19 11:01:08: Business component call Fn_WebServices_JEP_HPOO_GetTemplateID execution initiated
+Pass 01-Mar-19 11:01:18: Service ID Set: 1400019028
+Pass 01-Mar-19 11:01:18: ============== Firing Soap Request =====================
+Pass 01-Mar-19 11:01:18: Request File set to : HpooTemplate_RequestRequest
+Pass 01-Mar-19 11:01:18: Response File set to : HpooTemplate_RequestResponse
+Pass 01-Mar-19 11:01:18: Soap Action set to : enterpriseServiceNIPParameter
+Pass 01-Mar-19 11:01:18: EndPoint URL set to : http://10.64.76.12:7285/enterprise/InventoryProvisioningServices/InventoryProvisioningServices
+Pass 01-Mar-19 11:01:18: ========================================================
+Pass 01-Mar-19 11:01:20: Template names retrieved from Soap Response
+Pass 01-Mar-19 11:01:20: Template Name: L2_Ring_tagged_BW_RAD
+Pass 01-Mar-19 11:01:20: Template Name: NON-RIL_Ethernet_SIP_CSS_Primary_IPManaged
+Pass 01-Mar-19 11:01:20: Template Name: NON-RIL_Ethernet_SIP_CSS_Secondary_IPManaged
+Pass 01-Mar-19 11:01:20: Total Template Names retrieved: 3
+Pass 01-Mar-19 11:01:20: Neids retrieved from Soap Response
+Pass 01-Mar-19 11:01:20: Neid: INMUMUMBXXXXNB0016ENBESS003
+Pass 01-Mar-19 11:01:20: Neid: INMUMUMBXXXXNB0016ENBESR001
+Pass 01-Mar-19 11:01:20: Neid: INMUMUMBXXXXNB0016ENBESR002
+Pass 01-Mar-19 11:01:20: Total Neids retrieved: 3
+Pass 01-Mar-19 11:01:32: Business component call Fn_WebServices_JEP_HPOO_GetTemplateID execution completed. Total Time taken = 24 seconds
+Pass 01-Mar-19 11:01:34: Business component call Fn_Jep_Hpoo_MatchTemplatesInWinScp execution initiated
+Pass 01-Mar-19 11:01:48: 1400019028_JepTemplates.txt file created successfully to local directory - with Template IDS
+Pass 01-Mar-19 11:01:48: Template Name: L2_RING_TAGGED_BW_RAD - matched in WinSCP
+Pass 01-Mar-19 11:01:48: Template Name: NON-RIL_ETHERNET_SIP_CSS_PRIMARY_IPMANAGED - matched in WinSCP
+Pass 01-Mar-19 11:01:48: Template Name: NON-RIL_ETHERNET_SIP_CSS_SECONDARY_IPMANAGED - matched in WinSCP
+Pass 01-Mar-19 11:01:48: All Templates matched in WinSCP
+Pass 01-Mar-19 11:01:48: Business component call Fn_Jep_Hpoo_MatchTemplatesInWinScp execution completed. Total Time taken = 14 seconds
+Pass 01-Mar-19 11:01:50: Business component call Fn_Jep_Hpoo_WinScp execution initiated
+Pass 01-Mar-19 11:02:00: Soap Request for HPOO ran successfully.
+Pass 01-Mar-19 11:02:06: File extracted from: Enterprise_INMUMUMBXXXXNB0016ENBESR001_BGLRRLABECR001_IPMANAGED_318547.zip
+Pass 01-Mar-19 11:02:06: MOP: ENTERPRISE_INMUMUMBXXXXNB0016ENBESR001_BGLRRLABECR001_IPMANAGED_318547 - matched in Soap Response Templates
+Pass 01-Mar-19 11:02:09: File extracted from: Enterprise_INMUMUMBXXXXNB0016ENBESR002_BGLRRLABECR002_IPMANAGED_318547.zip
+Pass 01-Mar-19 11:02:09: MOP: ENTERPRISE_INMUMUMBXXXXNB0016ENBESR002_BGLRRLABECR002_IPMANAGED_318547 - matched in Soap Response Templates
+Pass 01-Mar-19 11:02:11: File extracted from: Enterprise_INMUMUMBXXXXNB0016ENBESS003_MUMBRLB1ECR001_318547.zip
+Pass 01-Mar-19 11:02:11: MOP: ENTERPRISE_INMUMUMBXXXXNB0016ENBESS003_MUMBRLB1ECR001_318547 - matched in Soap Response Templates
+Pass 01-Mar-19 11:02:11: No. of MOPs generated is equal to No. of Templates in Soap Request: 3
+Pass 01-Mar-19 11:02:11: Business component call Fn_Jep_Hpoo_WinScp execution completed. Total Time taken = 21 seconds
+Pass 01-Mar-19 11:02:13: Business component call Fn_Jep_Hpoo_MatchMOPParameters execution initiated
+Pass 01-Mar-19 11:02:22: No Missing Parameters in MOP
+Pass 01-Mar-19 11:02:30: Business component call Fn_Jep_Hpoo_MatchMOPParameters execution completed. Total Time taken = 17 seconds
+Pass 01-Mar-19 11:02:34: Saving ExcelDashBoardReport
+Pass 01-Mar-19 11:02:35: ExcelDashBoardReport Saved
+Pass 01-Mar-19 11:02:35: Empty testCaseID found. Possibly End of Execution.
+Pass 01-Mar-19 11:02:35: Execution wrapUp initiated
+Pass 01-Mar-19 11:02:35: Saving ExcelDashBoardReport
+Pass 01-Mar-19 11:02:35: ExcelDashBoardReport Saved
+Pass 01-Mar-19 11:02:35: Closing HTML report
+Pass 01-Mar-19 11:02:35: HTML report closed
+Pass 01-Mar-19 11:02:35: Calling CloseExcelDashboardReport
+Pass 01-Mar-19 11:02:35: CloseExcelDashboardReport Completed
+Pass 01-Mar-19 11:02:35: Execution wrapUp Completed
